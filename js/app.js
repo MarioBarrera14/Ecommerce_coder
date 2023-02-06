@@ -124,12 +124,12 @@ stockProductos.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class=" prod p-3 col-12 col-md-12 col-lg-3 p-0" style="width: 20rem;">
-    <img class="prod__img" src="${img}"/>
-    <p class="prod__titulo">${nombre}</p>
-    <p class="prod__precio">${precio}</p>
-    <p class="card-text">Cantidad: ${cantidad}</p>
-    <div class="prod__botones gap-1">
+    <div class=" prod p-3" style="width: 20rem;">
+    <img class="prod__img p-3" src="${img}"/>
+    <p>${nombre}</p>
+    <p>${precio}</p>
+    <p>Cantidad: ${cantidad}</p>
+    <div >
     <button class="btn btn-primary" onclick="agregarProducto(${id})">Agregar al carrito<i class="fa-solid fa-cart-plus"></i></button>
     </div>
   </div>
