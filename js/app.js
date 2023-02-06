@@ -135,6 +135,7 @@ stockProductos.forEach((prod) => {
   </div>
     `;
   }
+  
 });
 
 const agregarProducto = (id) => {
@@ -143,13 +144,21 @@ const agregarProducto = (id) => {
   if(existe){
     const prod = carrito.map(prod => {
       if(prod.id === id){
-        prod.cantidad++
+        prod.cantidad++;
       }
     })
   } else {
     const item = stockProductos.find((prod) => prod.id === id)
     carrito.push(item)
   }
+  Toastify({
+    text: `Se agrego tu producto al carrito`,
+    duration: 3000,
+    gravity: "bottom",
+    style: {
+        background: "linear-gradient(to right, #4FC1FF, #1E1E82)",
+    }
+}).showToast();
   mostrarCarrito()
 
 };
