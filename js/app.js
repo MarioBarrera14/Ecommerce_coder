@@ -124,7 +124,7 @@ stockProductos.forEach((prod) => {
   const { id, nombre, precio, desc, img, cantidad } = prod;
   if (contenedor) {
     contenedor.innerHTML += `
-    <div class="prod p-3 " style="width: 20rem;">
+    <div class=" prod p-3 col-12 col-md-12 col-lg-3 p-0" style="width: 20rem;">
     <img class="prod__img" src="${img}"/>
     <p class="prod__titulo">${nombre}</p>
     <p class="prod__precio">${precio}</p>

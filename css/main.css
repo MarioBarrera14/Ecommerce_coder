@@ -516,7 +516,7 @@ a:hover{
 	color: #38d39f;
 }
 
-.btn{
+.btns{
 	display: block;
 	width: 100%;
 	height: 50px;
@@ -533,7 +533,7 @@ a:hover{
 	cursor: pointer;
 	transition: .5s;
 }
-.btn:hover{
+.btns:hover{
 	background-position: right;
 }
 
